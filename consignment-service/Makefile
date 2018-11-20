@@ -1,6 +1,11 @@
+gene:
+	protoc -I. --go_out=plugins=micro:$(GOPATH)/src/github.com/eggegg/shipper/consignment-service \
+	  proto/consignment/consignment.proto
+
 build:
 	protoc -I. --go_out=plugins=micro:$(GOPATH)/src/github.com/eggegg/shipper/consignment-service \
 	  proto/consignment/consignment.proto
+	GOOS=linux GOARCH=amd64 go build
 	docker build -t consignment-service .
 
 run:

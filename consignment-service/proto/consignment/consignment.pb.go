@@ -12,7 +12,7 @@ import (
 import (
 	client "github.com/micro/go-micro/client"
 	server "github.com/micro/go-micro/server"
-	context "context"
+	context "golang.org/x/net/context"
 )
 
 // Reference imports to suppress errors if they are not otherwise used.
