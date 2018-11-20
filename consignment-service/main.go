@@ -7,7 +7,7 @@ import (
         // Import the generated protobuf code
 	pb "github.com/eggegg/shipper/consignment-service/proto/consignment"
 	vesselProto "github.com/eggegg/shipper/vessel-service/proto/vessel"
-	"golang.org/x/net/context"
+	"context"
 	micro "github.com/micro/go-micro"
 	
 )

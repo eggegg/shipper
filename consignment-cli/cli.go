@@ -7,7 +7,7 @@ import (
 	"os"
 
 	pb "github.com/eggegg/shipper/consignment-service/proto/consignment"
-	"golang.org/x/net/context"
+	"context"
 
 	"github.com/micro/go-micro/cmd"
 	microclient "github.com/micro/go-micro/client"
