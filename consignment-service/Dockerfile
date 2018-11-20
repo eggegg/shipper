@@ -30,7 +30,7 @@
 FROM alpine:latest
 
 # Security related package, good to have.
-RUN apk --no-cache add ca-certificates
+#RUN apk --no-cache add ca-certificates
 
 # Same as before, create a directory for our app.
 RUN mkdir /app
